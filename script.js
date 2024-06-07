@@ -55,3 +55,22 @@ document.addEventListener('DOMContentLoaded', () => {
         paragraphElement.style.display = 'block';
     });
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    const rightCard = document.querySelector('.right__card');
+
+    function checkHoverCondition() {
+        if (rightCard.querySelector('.right__card__2')) {
+            rightCard.classList.add('no-hover');
+        } else {
+            rightCard.classList.remove('no-hover');
+        }
+    }
+
+    // Run the check initially
+    checkHoverCondition();
+
+    // Optionally, re-run the check when the content of right__card changes
+    const observer = new MutationObserver(checkHoverCondition);
+    observer.observe(rightCard, { childList: true, subtree: true });
+});
