@@ -19,7 +19,9 @@
             <div class="sidebar__menu">
                 <div class="menu__top">
                     <p><img src="./assets/smart-home.svg" alt="">Pano</p>
-                    <p style="background-color: #2847D0; padding: 9px 9px 9px 9px; margin-left: -9px; white-space: nowrap; border-radius: 6px; color: #fff;"><img src="./assets/layers-linked.svg" alt="">Oluşturulan Linkler</p>
+                    <p
+                        style="background-color: #2038A7; padding: 9px 9px 9px 9px; margin-left: -9px; white-space: nowrap; border-radius: 6px; color: #fff;">
+                        <img src="./assets/layers-linked.svg" alt="">Oluşturulan Linkler</p>
                     <p><img src="./assets/qrcode.svg" alt="">QR Kod Oluştur</p>
                     <p><img src="./assets/curling.svg" alt="">Biyografi Bağlantısı</p>
                     <p><img src="./assets/report-analytics.svg" alt="">Rapor Görüntüle</p>
@@ -36,6 +38,10 @@
             <div class="main__title">
                 <div class="title__left">
                     Oluşturulan Linkler
+                </div>
+                <div class="title__input">
+                    <input type="text">
+                    <p><img src="./assets/Search icon.svg" alt=""> <span>Link İçerisinde Ara</span></p>
                 </div>
                 <div class="title__right">
                     <img src="/assets/bell.png" alt="">
@@ -97,15 +103,8 @@
                     <p>Bağlantılar</p>
                     <p>Burada oluşturduğunuz kısa linkleri görebilirsiniz.</p>
                     <div class="right__menu">
-                        <p><span></span>En Son</p>
-                        <p>Daha Eski</p>
-                    </div>
-                    <div class="right__card" style="background-color: #f7f8fa;">
-                        <img src="./assets/logo2.svg" alt="">
-                        <p>E-ticaret / hepsitools.com <span>Oluşturma Tarihi / 15 Ocak 2023</span></p>
-                        <img src="./assets/copy.svg" alt="">
-                        <img src="./assets/download.svg" alt="">
-                        <img src="./assets/dots-vertical.svg" alt="">
+                        <p><span class="active"></span>En Son</p>
+                        <p><span></span>Daha Eski</p>
                     </div>
                     <div class="right__card">
                         <img src="./assets/logo2.svg" alt="">
@@ -122,6 +121,7 @@
             </div>
         </div>
     </main>
+    <script src="./script.js"></script>
 </body>
 
 </html>
