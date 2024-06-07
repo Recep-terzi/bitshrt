@@ -108,7 +108,7 @@ input:focus {
                     border-radius: 8px;
                     padding: 0 20px;
                 }
-
+               
                 &>p {
                     position: absolute;
                     display: flex;

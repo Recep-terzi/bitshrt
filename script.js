@@ -43,3 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 });
+document.addEventListener('DOMContentLoaded', () => {
+    const inputElement = document.querySelector('.title__input > input');
+    const paragraphElement = document.querySelector('.title__input > p');
+
+    inputElement.addEventListener('focus', () => {
+        paragraphElement.style.display = 'none';
+    });
+
+    inputElement.addEventListener('blur', () => {
+        paragraphElement.style.display = 'block';
+    });
+});
