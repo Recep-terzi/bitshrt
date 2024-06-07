@@ -19,6 +19,9 @@ input:focus {
 input:focus {
     border: 1px solid #2847D0
 }
+input{
+    font-weight:700;
+}
 
 .main__body {
     display: flex;
@@ -160,7 +163,7 @@ input:focus {
                         font-size: 10px;
                         font-weight: 400;
                         line-height: 12.1px;
-
+                        
                         &>p:first-child {
                             font-size: 13px;
                             font-weight: 600;
